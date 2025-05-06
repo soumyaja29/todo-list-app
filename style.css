@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    min-height: 100vh;
+    transition: background 0.3s ease;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #add-btn {
+    padding: 8px 12px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-btn:hover {
+    background-color: #0b76d1;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0b76d1;
+  }
+  
+  .dark-mode-toggle {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  body.dark .container {
+    background: #2b2b2b;
+  }
+  
+  body.dark li {
+    background: #444;
+    color: white;
+  }
+  
+  body.dark #task-input,
+  body.dark #add-btn,
+  body.dark .filter-btn {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark .filter-btn:hover {
+    background-color: #555;
+  }
+  
+  body.dark .delete-btn {
+    background: #aa0000;
+  }
+  
